@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+	
+	.column {
+    float: left;
+    width: 33.33%;
+	background-color: grey;
+	height: 300px;
+	opacity: 0.3;
+	padding-top: 5%;
+
+
+}
+
+.header{
+	background-color: green;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.green{
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+}
+@media (max-width: 650px) {
+	.green{width: 100px;height: 100px;}
+}
+@media (max-width: 480px) {
+	.column{display: inline;}
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+	
+	<h1>Este es un ejercicio de grillas!</h1>
+
+</div>
+
+
+		 <div class="row">
+  <div class="column"><div class="green"></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta, expedita nulla eveniet deserunt possimus, molestiae laudantium nemo debitis adipisci deleniti itaque ut mollitia! Consequuntur aliquid quisquam quibusdam et omnis.</p></div>
+  <div class="column"><div class="green"></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta, expedita nulla eveniet deserunt possimus, molestiae laudantium nemo debitis adipisci deleniti itaque ut mollitia! Consequuntur aliquid quisquam quibusdam et omnis.</p></div>
+  <div class="column"><div class="green"></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta, expedita nulla eveniet deserunt possimus, molestiae laudantium nemo debitis adipisci deleniti itaque ut mollitia! Consequuntur aliquid quisquam quibusdam et omnis.</p></div>
+</div> 
+
+
+</body>
+</html>
